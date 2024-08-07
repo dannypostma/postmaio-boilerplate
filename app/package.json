@@ -1,0 +1,43 @@
+{
+  "name": "nuxt-express",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "dev": "node --max-old-space-size=4096 node_modules/nuxt/bin/nuxt.js dev",
+    "build": "node --max-old-space-size=4096 node_modules/nuxt/bin/nuxt.js build",
+    "start": "node --max-old-space-size=4096 node_modules/nuxt/bin/nuxt.js start",
+    "generate": "node --max-old-space-size=4096 node_modules/nuxt/bin/nuxt.js generate",
+    "lint": "yarn lint:js",
+    "lint:js": "eslint --ext .js,.vue --ignore-path .gitignore ."
+  },
+  "engines": {
+    "node": "18.x"
+  },
+  "dependencies": {
+    "@nuxt/http": "latest",
+    "@nuxtjs/axios": "^5.13.6",
+    "@nuxtjs/firebase": "^8.2.2",
+    "@nuxtjs/proxy": "^2.1.0",
+    "nuxt": "^2.15.8",
+    "posthog-js": "^1.154.2",
+    "redirect-ssl": "^3.0.0",
+    "tailwindcss": "^3.4.7",
+    "v-lazy-image": "^1.4.0",
+    "vue-toast-notification": "^0.6.2"
+  },
+  "devDependencies": {
+    "@nuxt/content": "^1.15.1",
+    "@nuxt/image": "^0.7.1",
+    "@nuxtjs/eslint-config": "^6.0.1",
+    "@nuxtjs/eslint-module": "^3.0.2",
+    "@nuxtjs/tailwindcss": "^4.2.1",
+    "@tailwindcss/aspect-ratio": "^0.3.0",
+    "@tailwindcss/forms": "^0.3.4",
+    "@tailwindcss/line-clamp": "^0.3.1",
+    "@tailwindcss/typography": "^0.5.9",
+    "babel-eslint": "^10.1.0",
+    "eslint": "^7.29.0",
+    "eslint-plugin-nuxt": "^2.0.0",
+    "eslint-plugin-vue": "^7.12.1"
+  }
+}

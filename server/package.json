@@ -1,0 +1,29 @@
+{
+  "name": "server",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "engines": {
+    "node": "18.x"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "stripe": "stripe listen --forward-to http://localhost:5000/webhook/stripe",
+    "start": "nodemon --max-old-space-size=4096 index.js",
+    "ngrok": "ngrok http --hostname=postcrafts.ngrok.io 5000"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@bentonow/bento-node-sdk": "^0.2.1",
+    "axios": "^1.7.3",
+    "body-parser": "^1.20.2",
+    "connect-timeout": "^1.9.0",
+    "cors": "^2.8.5",
+    "dotenv": "^16.4.5",
+    "express": "^4.19.2",
+    "mongoose": "^8.5.2",
+    "stripe": "^16.6.0",
+    "uuid": "^10.0.0"
+  }
+}

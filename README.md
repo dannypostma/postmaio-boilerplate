@@ -1,4 +1,4 @@
-## Postma.io Boilerplace
+## Postma.io Boilerplate
 
 This is the template I used for postma.io and for most of my other projects.
 
